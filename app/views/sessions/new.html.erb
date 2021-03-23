@@ -2,5 +2,6 @@
 
 <%= form_with url: sign_in_path do |form| %>
   <%= form.text_field  :name%>
+  <%= link_to 'Please Sign Up', sign_up_path %>
   <%= form.submit "Sign In" %>
 <% end %>
