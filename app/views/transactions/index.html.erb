@@ -1,3 +1,21 @@
 <div>
   <p>TRANSACTIONS</p>
 </div>
+<div>
+<spam>Total Amount</spam>
+<spam>$<%= @sum %></spam>
+</div>
+<% @transactions.each do |transactions| %>
+  <div>
+    <div>
+     <%image_tag('')%>
+    </div>
+    <div>
+      <p><%= transactions.name %></p>
+      <p><%= transactions.created_at %></p>
+    </div>
+    <div>
+     <p>$<%= transactions.amount %></p>
+    </div>
+  </div>
+<% end %>
