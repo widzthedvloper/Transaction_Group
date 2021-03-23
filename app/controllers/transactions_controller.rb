@@ -4,7 +4,8 @@ class TransactionsController < ApplicationController
   end
 
   def index
-    @transactions = Transaction.all
+    @transactions = Transaction.user_transac(Current.user.id)
+    @sum = Transaction.sum_amount(Current.user.id)
   end
 
   def show
