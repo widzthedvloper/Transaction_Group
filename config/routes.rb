@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'main', to: 'profil#index'
 
   get 'transaction', to: 'transactions#index'
+  get 'create_transaction', to: 'transactions#new'
+  post 'transaction', to: 'transactions#create'
 
   delete "log_out", to: "sessions#destroy"
   root to: "sessions#new"
