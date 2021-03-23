@@ -1,0 +1,15 @@
+<%= form_with model: @transactions, url: transaction_path do |form| %>
+  <% if @transactions.errors.any? %>
+    <div>
+      <% @transactions.errors.full_messages.each do |message|%>
+        <div><%= message %></div>
+      <%end%>
+    </div>
+  <% end %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :amount %>
+  <%= form.text_field :amount %>
+  <%= form.number_field :user_id, value: Current.user.id, type: :hidden %>
+  <%= form.submit%>
+<% end %>
