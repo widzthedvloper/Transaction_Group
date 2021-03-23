@@ -3,4 +3,7 @@ class Transaction < ApplicationRecord
 
   belongs_to :user
   has_and_belongs_to_many :groups
+
+  scope :user_transac, ->(u_id) { where(user_id: u_id).select('id, name, amount, created_at') }
+  scope :sum_amount, ->(u_id) { where(user_id: u_id).select('id, name, amount, created_at').sum('amount') }
 end
