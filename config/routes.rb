@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get "sign_in", to: "sessions#new"
   post "sign_in", to: "sessions#create"
-  
+
   delete "log_out", to: "sessions#destroy"
-  root to: "profil#index"
+  root to: "sessions#new"
 end
