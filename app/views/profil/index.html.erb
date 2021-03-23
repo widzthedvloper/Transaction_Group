@@ -2,3 +2,4 @@
 <% if @user%>
   Sign in as: <%= @user.name %>
 <% end %>
+<%= button_to "Log Out", log_out_path, method: :delete %>
