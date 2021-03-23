@@ -1,4 +1,3 @@
-<h1>User profil</h1>
 <div>
   <%= image_tag('user_logo.png') %>
   <% if @user%>
@@ -7,11 +6,14 @@
 </div>
 <%= button_to "Log Out", log_out_path, method: :delete %>
 <div>
+  <%= image_tag('transactions.png')%>
   <%= link_to 'All my transactions' %>
 </div>
 <div>
+  <%= image_tag('transactions.png')%>
   <%= link_to 'All my external transactions' %>
 </div>
 <div>
-  <%= link_to 'All my external transactions' %>
+  <%= image_tag('group_transactions.png')%>
+  <%= link_to 'All groups' %>
 </div
