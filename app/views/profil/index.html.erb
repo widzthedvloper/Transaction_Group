@@ -1,5 +1,17 @@
 <h1>User profil</h1>
-<% if @user%>
-  Sign in as: <%= @user.name %>
-<% end %>
+<div>
+  <%= image_tag('user_logo.png') %>
+  <% if @user%>
+    Sign in as: <%= @user.name %>
+  <% end %>
+</div>
 <%= button_to "Log Out", log_out_path, method: :delete %>
+<div>
+  <%= link_to 'All my transactions' %>
+</div>
+<div>
+  <%= link_to 'All my external transactions' %>
+</div>
+<div>
+  <%= link_to 'All my external transactions' %>
+</div
