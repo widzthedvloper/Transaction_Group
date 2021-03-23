@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get 'main', to: 'profil#index'
 
+  get 'transaction', to: 'transactions#index'
+
   delete "log_out", to: "sessions#destroy"
   root to: "sessions#new"
 end
