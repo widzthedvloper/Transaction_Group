@@ -1,6 +1,13 @@
 <h1>Sign in</h1>
 
-<%= form_with url: sign_in_path do |form| %>
+<%= form_with model: @user, url: sign_in_path do |form| %>
+  <% if @user.errors.any? %>
+    <div>
+      <% @user.errors.full_messages.each do |message|%>
+        <div><%= message %></div>
+      <%end%>
+    </div>
+  <% end %>
   <%= form.text_field  :name%>
   <%= form.submit "Sign In" %>
 <% end %>
