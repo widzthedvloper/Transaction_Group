@@ -8,7 +8,7 @@
 <% @transactions.each do |transactions| %>
   <div>
     <div>
-     <%image_tag('')%>
+     <%= image_tag('transactions.png') %>
     </div>
     <div>
       <p><%= transactions.name %></p>
@@ -19,3 +19,4 @@
     </div>
   </div>
 <% end %>
+<%= link_to 'Create Transaction', create_transaction_path %>
