@@ -8,9 +8,18 @@ class TransactionsController < ApplicationController
     @sum = Transaction.sum_amount(Current.user.id)
   end
 
-  def show
+  def create
+    @transactions = Transaction.new(user_attributes)
+    if @transactions.save
+      redirect_to transaction_path, notice: 'Transaction Created successfully'
+    else
+      render :new
+    end
   end
 
-  def create
+  private
+
+  def user_attributes
+    params.require(:transaction).permit(:name, :amount, :user_id)
   end
 end
