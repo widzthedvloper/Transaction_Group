@@ -6,4 +6,5 @@ class Transaction < ApplicationRecord
 
   scope :user_transac, ->(u_id) { where(user_id: u_id).select('id, name, amount, created_at') }
   scope :sum_amount, ->(u_id) { where(user_id: u_id).select('id, name, amount, created_at').sum('amount') }
+  scope :ext_transaction, -> { where(author_id: nil) }
 end
