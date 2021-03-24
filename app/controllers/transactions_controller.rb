@@ -21,7 +21,8 @@ class TransactionsController < ApplicationController
   end
 
   def group
-    group.update_column(:title, 'title')
+    @group = Group.find_by(name: params[])
+    
   end
 
   def create
