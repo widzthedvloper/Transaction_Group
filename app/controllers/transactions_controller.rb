@@ -21,8 +21,11 @@ class TransactionsController < ApplicationController
   end
 
   def group
-    @group = Group.find_by(name: params[])
-    
+    @group = Group.find_by(name: params[:group])
+    Transaction.find(params[:transaction_id]).groups << Group.find(@group.id)
+    @trans_update = Transaction.find_by(id: params[:transaction_id])
+    @trans_update.update_columns(author_id: 1)
+    redirect_to group_path
   end
 
   def create
