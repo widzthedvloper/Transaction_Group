@@ -1,0 +1,21 @@
+<div>
+  <h2>Group</h2>
+</div>
+<div>
+<spam>Total Group</spam>
+<spam><%= @count %></spam>
+</div>
+<% @groups.each do |group| %>
+  <%= link_to group_path(id: group.id), method: :post do %>
+  <div>
+    <div>
+     <%= image_tag('group_transactions.png') %>
+    </div>
+    <div>
+      <p><%= group.name %></p>
+      <p><%= group.created_at %></p>
+    </div>
+  </div>
+  <% end %>
+<% end %>
+<%= link_to 'Create Group', create_group_path %>
