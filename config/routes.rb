@@ -21,6 +21,9 @@ Rails.application.routes.draw do
   get 'create_group', to: 'groups#new'
   post 'create_group', to: 'groups#create'
 
+  get 'add_transaction', to: 'transactions#update'
+  post 'add_transaction', to: 'transactions#group'
+
   delete "log_out", to: "sessions#destroy"
   root to: "sessions#new"
 end
