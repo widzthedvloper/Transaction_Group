@@ -17,6 +17,7 @@
     <div>
      <p>$<%= transactions.amount %></p>
     </div>
+    <%= link_to 'Add To A Group', add_transaction_path(id: transactions.id)%>
   </div>
 <% end %>
 <%= link_to 'Create Transaction', create_transaction_path %>
