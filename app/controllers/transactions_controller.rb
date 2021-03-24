@@ -8,6 +8,22 @@ class TransactionsController < ApplicationController
     @sum = Transaction.sum_amount(Current.user.id)
   end
 
+  def external
+    @transactions = Transaction.ext_transaction
+    @sum = @transactions.sum_amount(Current.user.id)
+
+    render :index
+  end
+
+  def update
+    @groups = Group.where('id > 0')
+    @transaction = Transaction.find_by(id: params[:id])
+  end
+
+  def group
+    group.update_column(:title, 'title')
+  end
+
   def create
     @transactions = Transaction.new(user_attributes)
     if @transactions.save
