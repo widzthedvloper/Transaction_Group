@@ -1,0 +1,13 @@
+<h2>Add To A Group</h2>
+<h3>Existing Groups</h3>
+<% @groups.each do |group| %>
+  <div>
+     <p><%= group.name %></p>
+  </div>
+<% end %>
+<%= form_with model: @transactions, url: add_transaction_path do |form| %>
+  <%= form.label :group %>
+  <%= form.text_field :group %>
+  <%= form.number_field :transaction_id, value: @transaction.id, type: :hidden %>
+  <%= form.submit 'Group Transaction'%>
+<% end %>
