@@ -17,7 +17,7 @@ An app for grouping transactions by goals. A simple authentication form is used 
 
 ## Getting Started :
 - Clone the repository: `git clone` git@github.com:widzthedvloper/Transaction_Group.git
-- Move inside the club-house folder: `cd ransaction_Groupe`
+- Move inside the club-house folder: `cd Transaction_Groupe`
 - Run: `rails db:create` and `rails db:migrate`.
 - Run the server: `rails s` or `rails server`
 - To see the app on your local machine open your browser and type: `localhost:3000`. Have fun !!!
