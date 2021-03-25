@@ -1,7 +1,9 @@
-<h1>Sign in</h1>
-
+<div class="container text-center text-white">
+  <h1>Sign In</h1>
+</div>
 <%= form_with url: sign_in_path do |form| %>
-  <%= form.text_field  :name%>
-  <%= link_to 'Please Sign Up', sign_up_path %>
-  <%= form.submit "Sign In" %>
+  <%= form.label :name, class: "text-white"%>
+  <%= form.text_field  :name, class: "form-control" %>
+  <%= link_to 'Please Sign Up', sign_up_path, class: "text-success text-decoration-none" %>
+  <%= form.submit "Sign In", class: 'btn btn-primary form-control'%>
 <% end %>
