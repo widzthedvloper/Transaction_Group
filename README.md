@@ -12,6 +12,8 @@ An app for grouping transactions by goals. A simple authentication form is used 
 ## App add view group
 ![](app/assets/images/addtogroup.png)
 
+## Prerequisite
+- PostgreSQL
 
 ## Getting Started :
 - Clone the repository: `git clone` git@github.com:widzthedvloper/Transaction_Group.git
@@ -20,6 +22,7 @@ An app for grouping transactions by goals. A simple authentication form is used 
 - Run the server: `rails s` or `rails server`
 - To see the app on your local machine open your browser and type: `localhost:3000`. Have fun !!!
 
+
 ## BUILT WITH
 
     -HTML
@@ -27,6 +30,7 @@ An app for grouping transactions by goals. A simple authentication form is used 
     -bootstrap
     -Ruby
     -Ruby on Rails
+    -Postgres as the database, make sure you have it installed on your local machine.
 
 
 ##  AUTHORS
