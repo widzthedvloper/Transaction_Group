@@ -45,4 +45,4 @@ An app for grouping transactions by goals. A simple authentication form is used 
 Give a :star: if you like this project!
 
 ## 📝 LICENSE
-This project is [MIT](/LICENSE) licensed..
+This project is [MIT](/LICENSE) licensed
