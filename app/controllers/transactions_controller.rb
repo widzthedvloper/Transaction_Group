@@ -1,4 +1,6 @@
 class TransactionsController < ApplicationController
+  before_action :sign_in_check
+
   def new
     @transactions = Transaction.new
   end
