@@ -6,6 +6,6 @@ class ApplicationController < ActionController::Base
   end
 
   def sign_in_check
-    redirec_to root_path if Current.user.nil?
+    redirect_to root_path if Current.user.nil?
   end
 end
