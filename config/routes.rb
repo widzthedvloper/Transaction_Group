@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get 'create_transaction', to: 'transactions#new'
   post 'transaction', to: 'transactions#create'
 
+  get 'ext_transaction', to: 'transactions#external'
+
 
 
   get 'group', to: 'groups#index'
