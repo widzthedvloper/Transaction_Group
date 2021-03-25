@@ -1,6 +1,6 @@
 class GroupsController < ApplicationController
   before_action :sign_in_check
-  
+
   def new
     @groups = Group.new
   end
