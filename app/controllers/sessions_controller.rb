@@ -1,6 +1,4 @@
 class SessionsController < ApplicationController
-  before_action :sign_in_check
-
   def new
     @user = User.new
   end
