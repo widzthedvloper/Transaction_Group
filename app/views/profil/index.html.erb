@@ -9,17 +9,17 @@
   </div>
 </div>
 <div class="container-fluid">
-  <%= button_to "Log Out", log_out_path, method: :delete, class: 'mt-5', class: "btn btn-primary btn-lg" %>
+  <%= button_to "Log Out", log_out_path, method: :delete, class: 'mt-5', class: "btn g-transaction-cta btn-lg" %>
   <div>
     <%= image_tag('transactions.png', :class => "h-70 w-25")%>
-    <%= link_to 'All my transactions', transaction_path, class: "border-bottom text-light text-decoration-none" %>
+    <%= link_to 'All my transactions', transaction_path, class: "border-bottom text-light p-2 text-decoration-none" %>
   </div>
   <div>
     <%= image_tag('transactions.png', :class => "h-70 w-25")%>
-    <%= link_to 'All my external transactions', ext_transaction_path, class: "border-bottom text-light text-decoration-none" %>
+    <%= link_to 'All my external transactions', ext_transaction_path, class: "border-bottom p-2 text-light text-decoration-none" %>
   </div>
   <div>
     <%= image_tag('transactions.png', :class => "h-70 w-25")%>
-    <%= link_to 'All groups', group_path, class: "border-bottom text-light text-decoration-none" %>
+    <%= link_to 'All groups', group_path, class: "border-bottom text-light p-2 text-decoration-none" %>
   </div>
 </div>
