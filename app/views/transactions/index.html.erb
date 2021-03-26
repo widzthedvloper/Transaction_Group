@@ -24,6 +24,7 @@
   <% end %>
 
   <div class="py-4 d-flex justify-content-center cta w-100">
+    <%= link_to "back", request.referer.present? ? request.referer : main_path, class: "text-white border rounded-circle p-2 pt-3 text-decoration-none me-5" %>
     <%= link_to 'Create Transaction', create_transaction_path, class: "text-white text-decoration-none border border-white py-3 px-5" %>
   </div>
 </div>
