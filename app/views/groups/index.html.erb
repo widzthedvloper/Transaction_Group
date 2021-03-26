@@ -2,8 +2,8 @@
   <h2>Group</h2>
 </div>
 <div class="d-flex bg-light justify-content-between">
-<spam class="px-2 py-3">Total Group</spam>
-<spam class="px-2 py-3"><%= @count %></spam>
+<span class="px-2 py-3">Total Group</span>
+<span class="px-2 py-3"><%= @count %></span>
 </div>
 <% @groups.each do |group| %>
   <%= link_to group_path(id: group.id), method: :post do %>
