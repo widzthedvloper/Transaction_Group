@@ -1,6 +1,11 @@
 <div class='py-5 container-fluid d-flex justify-content-center'>
   <h2 class="text-light">TRANSACTIONS</h2>
 </div>
+<div class="d-flex justify-content-between container">
+  <%= link_to "transaction",transaction_path, class: "text-light" %>
+  <%= link_to "external transaction",ext_transaction_path, class: "text-light" %>
+  <%= link_to "group",group_path, class: "text-light"%>
+</div>
 <div class="gray">
   <div class="d-flex bg-light justify-content-between">
     <span class="px-2 py-3">Total Amount</span>
