@@ -3,8 +3,8 @@
 </div>
 <div class="gray">
   <div class="d-flex bg-light justify-content-between">
-  <span class="px-2 py-3">Total Group</span>
-  <span class="px-2 py-3"><%= @count %></span>
+    <span class="px-2 py-3">Total Group</span>
+    <span class="px-2 py-3"><%= @count %></span>
   </div>
   <% @groups.each do |group| %>
     <%= link_to group_path(id: group.id), method: :post do %>
