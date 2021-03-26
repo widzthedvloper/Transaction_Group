@@ -25,6 +25,7 @@
       </div>
       <br>
       <%= link_to 'Add To A Group --->', add_transaction_path(id: transactions.id), class: "text-decoration-none" %>
+      <%= link_to 'Delete Transaction --->', delete_transaction_path(id: transactions.id),data: {confirm: "#{transactions.name} transaction will be deleted"}, class: 'text-decoration-none text-danger', method: 'delete'%>
     </div>
   <% end %>
 
