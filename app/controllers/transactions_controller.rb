@@ -39,6 +39,9 @@ class TransactionsController < ApplicationController
     end
   end
 
+  def destroy
+  end
+
   private
 
   def user_attributes
