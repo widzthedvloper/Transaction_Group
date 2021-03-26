@@ -1,10 +1,12 @@
-<div class="container text-center text-white">
-  <h1>Transaction App</h1>
-  <h2>Sign In</h2>
+<div class="py-5 container-fluid d-flex justify-content-center">
+  <h1 class="text-light">Transaction App</h1>
 </div>
-<%= form_with url: sign_in_path do |form| %>
-  <%= form.label :name, class: "text-white"%>
-  <%= form.text_field  :name, class: "form-control" %>
-  <%= link_to 'Please Sign Up -->', sign_up_path, class: "text-success text-decoration-none" %>
-  <%= form.submit "Sign In", class: 'btn btn-success form-control'%>
-<% end %>
+<h2 class="text-light text-center">Sign In</h2>
+<div class="bg-white full-height">
+  <%= form_with url: sign_in_path do |form| %>
+    <%= form.label :name%>
+    <%= form.text_field  :name, class: "form-control" %>
+    <%= link_to 'Please Sign Up -->', sign_up_path, class: "g-transaction-cta text-dark text-decoration-none" %>
+    <%= form.submit "Sign In", class: 'btn g-transaction-cta form-control'%>
+  <% end %>
+</div>

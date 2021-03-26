@@ -9,7 +9,7 @@ body {
   height: 100vh;
 }
 
-p, a {
+p, a, input, h1, h2 {
   color: #434b54;
 }
 
@@ -30,4 +30,8 @@ p, a {
 
 .g-transaction-cta {
   background-color: #5fb523;
+}
+
+.full-height {
+  height: 100vh;
 }
