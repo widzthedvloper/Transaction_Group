@@ -2,9 +2,7 @@
   <div class="d-block d-block text-center">
     <%= image_tag('user_logo.png', :class => "h-50 w-50 mt-3 mb-2 bg-white rounded-circle")%>
     <div class="text-center w-100 text-light">
-      <% if @user%>
-        Sign in as: <%= @user.name %>
-      <% end %>
+      Sign in as: <%= sign_in_name%>
     </div>
   </div>
 </div>
