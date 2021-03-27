@@ -21,6 +21,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'i18n', '~> 1.8', '>= 1.8.9'
 gem 'jquery-rails'
 
 # Use Active Storage variant

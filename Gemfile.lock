@@ -113,10 +113,12 @@ GEM
     marcel (1.0.0)
     method_source (1.0.0)
     mini_mime (1.0.3)
+    mini_portile2 (2.5.0)
     minitest (5.14.4)
     msgpack (1.4.2)
     nio4r (2.5.7)
-    nokogiri (1.11.2-x86_64-linux)
+    nokogiri (1.11.2)
+      mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     pg (1.2.3)
     public_suffix (4.0.6)
@@ -230,7 +232,7 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   bootsnap (>= 1.4.4)
@@ -238,6 +240,7 @@ DEPENDENCIES
   capybara (~> 3.35, >= 3.35.3)
   database_cleaner (~> 2.0, >= 2.0.1)
   factory_bot_rails (~> 6.1)
+  i18n (~> 1.8, >= 1.8.9)
   jbuilder (~> 2.7)
   jquery-rails
   listen (~> 3.3)
@@ -259,4 +262,4 @@ RUBY VERSION
    ruby 2.7.0p0
 
 BUNDLED WITH
-   2.2.15
+   2.1.4
