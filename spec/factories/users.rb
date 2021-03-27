@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :user do
-    name { 'MyString' }
+    name { SecureRandom.hex(10) }
   end
 end

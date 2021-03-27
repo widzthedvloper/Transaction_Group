@@ -1,5 +1,8 @@
 # Transaction Group
-An app for grouping transactions by goals. A simple authentication form is used to create a user and log in. The app allows you to create a transaction, create a group and then add the transaction to multiple groups.
+An app for grouping transactions by goals. A simple authentication form is used to create a user and log in. The app allows you to create a transaction, create a group and then add the transaction to multiple groups. Design idea by [Gregoire Vella on Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding)
+
+## Live Version
+[Transaction Group](https://tranquil-springs-52360.herokuapp.com/)
 
 ## App Home Page
 ![](app/assets/images/profil.png)
@@ -18,6 +21,8 @@ An app for grouping transactions by goals. A simple authentication form is used 
 ## Getting Started :
 - Clone the repository: `git clone` git@github.com:widzthedvloper/Transaction_Group.git
 - Move inside the club-house folder: `cd Transaction_Groupe`
+- run: `bundle install`
+- `yarn` might be required
 - Run: `rails db:create` and `rails db:migrate`.
 - Run the server: `rails s` or `rails server`
 - To see the app on your local machine open your browser and type: `localhost:3000`. Have fun !!!
@@ -45,4 +50,4 @@ An app for grouping transactions by goals. A simple authentication form is used 
 Give a :star: if you like this project!
 
 ## 📝 LICENSE
-This project is [MIT](/LICENSE) licensed..
+This project is [MIT](/LICENSE) licensed

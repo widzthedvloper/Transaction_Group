@@ -24,7 +24,7 @@ class TransactionsController < ApplicationController
 
   def group
     @group = Group.find_by(name: params[:group])
-    Transaction.find(params[:transaction_id]).groups << Group.find(@group.id)
+    Transaction.find(params[:transaction_id]).groups << Group.find(@group.id) unless @group.nil?
     @trans_update = Transaction.find_by(id: params[:transaction_id])
     @trans_update.update_columns(author_id: 1)
     redirect_to group_path
@@ -37,6 +37,11 @@ class TransactionsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    Transaction.destroy(params[:id])
+    redirect_to transaction_path
   end
 
   private

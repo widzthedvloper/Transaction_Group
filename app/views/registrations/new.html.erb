@@ -1,4 +1,5 @@
-<div class="container text-center text-white">
-  <h1>Sign Up<h1>
+<div class="py-5 container-fluid d-flex justify-content-center">
+  <%= link_to "<<", request.referer.present? ? request.referer : sign_in_path, class: "text-white border rounded-circle p-2 pt-2 text-decoration-none me-5 g-transaction-cta" %>
+  <h1 class="text-light">Sign Up<h1>
 </div>
 <%= render partial: 'shared/form' %>

@@ -1,0 +1,15 @@
+current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.7.3/ext/bootsnap
+/home/widzmarc/.rbenv/versions/2.7.0/bin/ruby -I /home/widzmarc/.rbenv/versions/2.7.0/lib/ruby/2.7.0 -r ./siteconf20210325-35880-q8hzcr.rb extconf.rb
+creating Makefile
+
+current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.7.3/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.7.3/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.7.3/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20210325-35880-vlxhfx/bootsnap
