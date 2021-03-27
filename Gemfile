@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'i18n', '~> 1.8', '>= 1.8.9'
 gem 'jquery-rails'
+gem 'rake', '~> 13.0', '>= 13.0.3'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
