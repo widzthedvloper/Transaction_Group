@@ -1,6 +1,3 @@
-// Place all the styles related to the groups controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
 body {
   background-color: #3777c2;
 }
@@ -17,7 +14,7 @@ h1,
 h2,
 button,
 .text-color {
-  color: #434b54;
+  color: #444b53;
 }
 
 .yellow {
@@ -42,3 +39,4 @@ button,
 .full-height {
   height: 100vh;
 }
+/*# sourceMappingURL=groups.css.map */
