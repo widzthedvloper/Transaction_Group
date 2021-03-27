@@ -1,5 +1,6 @@
 require 'capybara/rspec'
 
+# rubocop:disable Metrics/BlockLength
 RSpec.configure do |config|
   config.use_transactional_fixtures = false
 
@@ -54,3 +55,4 @@ RSpec.configure do |config|
     driven_by :selenium_headless
   end
 end
+# rubocop:enable Metrics/BlockLength
