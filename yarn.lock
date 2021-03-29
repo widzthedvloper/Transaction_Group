@@ -6177,6 +6177,11 @@
   "resolved" "https://registry.npmjs.org/nice-try/-/nice-try-1.0.5.tgz"
   "version" "1.0.5"
 
+"node-bin-setup@^1.0.0":
+  "integrity" "sha512-uPIxXNis1CRbv1DwqAxkgBk5NFV3s7cMN/Gf556jSw6jBvV7ca4F9lRL/8cALcZecRibeqU+5dFYqFFmzv5a0Q=="
+  "resolved" "https://registry.npmjs.org/node-bin-setup/-/node-bin-setup-1.0.6.tgz"
+  "version" "1.0.6"
+
 "node-forge@^0.10.0":
   "integrity" "sha512-PPmu8eEeG9saEUvI97fm4OYxXVB6bFvyNTyiUOBichBpFG8A1Ljw3bY62+5oOjDEMHRnd0Y7HQ+x7uzxOzC6JA=="
   "resolved" "https://registry.npmjs.org/node-forge/-/node-forge-0.10.0.tgz"
@@ -6278,6 +6283,13 @@
     "sass-graph" "2.2.5"
     "stdout-stream" "^1.4.0"
     "true-case-path" "^1.0.2"
+
+"node@^15.12.0":
+  "integrity" "sha512-0R4LdnFQzII7I04A2eY1d4TypvH6XhSMluRr477Zwz43jUWdM+bayWsLfgnkf1Cv4Tbl9MaTAjAIvGpC0+6gFQ=="
+  "resolved" "https://registry.npmjs.org/node/-/node-15.12.0.tgz"
+  "version" "15.12.0"
+  dependencies:
+    "node-bin-setup" "^1.0.0"
 
 "nopt@2 || 3":
   "integrity" "sha1-xkZdvwirzU2zWTF/eaxopkayj/k="
