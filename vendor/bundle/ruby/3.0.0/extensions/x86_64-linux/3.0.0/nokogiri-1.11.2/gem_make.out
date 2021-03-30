@@ -1,0 +1,132 @@
+current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/ext/nokogiri
+/home/widzmarc/.rbenv/versions/3.0.0/bin/ruby -I /home/widzmarc/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210330-113683-cc5vyv.rb extconf.rb
+checking for whether -g is accepted as CFLAGS... yes
+checking for whether -Winline is accepted as CFLAGS... yes
+checking for whether -Wmissing-noreturn is accepted as CFLAGS... yes
+Building nokogiri using packaged libraries.
+Static linking is enabled.
+Cross build is disabled.
+checking for gzdopen() in -lz... yes
+Using mini_portile version 2.5.0
+checking for iconv... yes
+---------- IMPORTANT NOTICE ----------
+Building Nokogiri with a packaged version of libxml2-2.9.10.
+Configuration options: --host\=x86_64-pc-linux-gnu --enable-static --disable-shared --libdir\=/home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/lib --with-iconv\=yes --without-python --without-readline --with-c14n --with-debug --with-threads --disable-shared --enable-static CFLAGS\=-O2\ -U_FORTIFY_SOURCE\ -g\ -fPIC
+The following patches are being applied:
+  - 0001-Revert-Do-not-URI-escape-in-server-side-includes.patch
+  - 0002-Remove-script-macro-support.patch
+  - 0003-Update-entities-to-remove-handling-of-ssi.patch
+  - 0004-libxml2.la-is-in-top_builddir.patch
+  - 0005-Fix-infinite-loop-in-xmlStringLenDecodeEntities.patch
+  - 0006-htmlParseComment-treat-as-if-it-closed-the-comment.patch
+  - 0007-use-new-htmlParseLookupCommentEnd-to-find-comment-en.patch
+  - 0008-use-glibc-strlen.patch
+  - 0009-avoid-isnan-isinf.patch
+  - 0010-parser.c-shrink-the-input-buffer-when-appropriate.patch
+
+The Nokogiri maintainers intend to provide timely security updates, but if
+this is a concern for you and want to use your OS/distro system library
+instead, then abort this installation process and install nokogiri as
+instructed at:
+
+  https://nokogiri.org/tutorials/installing_nokogiri.html#installing-using-standard-system-libraries
+
+Note, however, that nokogiri cannot guarantee compatiblity with every
+version of libxml2 that may be provided by OS/package vendors.
+
+Extracting libxml2-2.9.10.tar.gz into tmp/x86_64-pc-linux-gnu/ports/libxml2/2.9.10... OK
+Running git apply with /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/patches/libxml2/0001-Revert-Do-not-URI-escape-in-server-side-includes.patch... OK
+Running git apply with /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/patches/libxml2/0002-Remove-script-macro-support.patch... OK
+Running git apply with /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/patches/libxml2/0003-Update-entities-to-remove-handling-of-ssi.patch... OK
+Running git apply with /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/patches/libxml2/0004-libxml2.la-is-in-top_builddir.patch... OK
+Running git apply with /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/patches/libxml2/0005-Fix-infinite-loop-in-xmlStringLenDecodeEntities.patch... OK
+Running git apply with /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/patches/libxml2/0006-htmlParseComment-treat-as-if-it-closed-the-comment.patch... OK
+Running git apply with /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/patches/libxml2/0007-use-new-htmlParseLookupCommentEnd-to-find-comment-en.patch... OK
+Running git apply with /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/patches/libxml2/0008-use-glibc-strlen.patch... OK
+Running git apply with /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/patches/libxml2/0009-avoid-isnan-isinf.patch... OK
+Running git apply with /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/patches/libxml2/0010-parser.c-shrink-the-input-buffer-when-appropriate.patch... OK
+Running 'configure' for libxml2 2.9.10... OK
+Running 'compile' for libxml2 2.9.10... OK
+Running 'install' for libxml2 2.9.10... OK
+Activating libxml2 2.9.10 (from /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.10)...
+Using mini_portile version 2.5.0
+---------- IMPORTANT NOTICE ----------
+Building Nokogiri with a packaged version of libxslt-1.1.34.
+Configuration options: --host\=x86_64-pc-linux-gnu --enable-static --disable-shared --libdir\=/home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.34/lib --without-python --without-crypto --with-debug --with-libxml-prefix\=/home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/ports/x86_64-pc-linux-gnu/libxml2/2.9.10 --disable-shared --enable-static CFLAGS\=-O2\ -U_FORTIFY_SOURCE\ -g\ -fPIC
+
+The Nokogiri maintainers intend to provide timely security updates, but if
+this is a concern for you and want to use your OS/distro system library
+instead, then abort this installation process and install nokogiri as
+instructed at:
+
+  https://nokogiri.org/tutorials/installing_nokogiri.html#installing-using-standard-system-libraries
+
+Extracting libxslt-1.1.34.tar.gz into tmp/x86_64-pc-linux-gnu/ports/libxslt/1.1.34... OK
+Running 'configure' for libxslt 1.1.34... OK
+Running 'compile' for libxslt 1.1.34... OK
+Running 'install' for libxslt 1.1.34... OK
+Activating libxslt 1.1.34 (from /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/ports/x86_64-pc-linux-gnu/libxslt/1.1.34)...
+checking for whether -DNOKOGIRI_PACKAGED_LIBRARIES is accepted as CPPFLAGS... yes
+checking for whether -DNOKOGIRI_LIBXML2_PATCHES="\"0001-Revert-Do-not-URI-escape-in-server-side-includes.patch 0002-Remove-script-macro-support.patch 0003-Update-entities-to-remove-handling-of-ssi.patch 0004-libxml2.la-is-in-top_builddir.patch 0005-Fix-infinite-loop-in-xmlStringLenDecodeEntities.patch 0006-htmlParseComment-treat-as-if-it-closed-the-comment.patch 0007-use-new-htmlParseLookupCommentEnd-to-find-comment-en.patch 0008-use-glibc-strlen.patch 0009-avoid-isnan-isinf.patch 0010-parser.c-shrink-the-input-buffer-when-appropriate.patch\"" is accepted as CPPFLAGS... yes
+checking for -llzma... no
+checking for -lliblzma... no
+checking for whether -DNOKOGIRI_LIBXSLT_PATCHES="\"\"" is accepted as CPPFLAGS... yes
+checking for xmlParseDoc() in libxml/parser.h... yes
+checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
+checking for exsltFuncRegister() in libexslt/exslt.h... yes
+checking for xmlHasFeature()... yes
+checking for xmlFirstElementChild()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetValidStructuredErrors()... yes
+checking for xmlSchemaSetValidStructuredErrors()... yes
+checking for xmlSchemaSetParserStructuredErrors()... yes
+checking for vasprintf()... yes
+checking for whether -DNOKOGIRI_OTHER_LIBRARY_VERSIONS="\"\"" is accepted as CPPFLAGS... yes
+creating Makefile
+
+current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/ext/nokogiri
+make "DESTDIR=" clean
+
+current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/ext/nokogiri
+make "DESTDIR="
+compiling html_document.c
+compiling html_element_description.c
+compiling html_entity_lookup.c
+compiling html_sax_parser_context.c
+compiling html_sax_push_parser.c
+compiling libxml2_backwards_compat.c
+compiling nokogiri.c
+compiling test_global_handlers.c
+compiling xml_attr.c
+compiling xml_attribute_decl.c
+compiling xml_cdata.c
+compiling xml_comment.c
+compiling xml_document.c
+compiling xml_document_fragment.c
+compiling xml_dtd.c
+compiling xml_element_content.c
+compiling xml_element_decl.c
+compiling xml_encoding_handler.c
+compiling xml_entity_decl.c
+compiling xml_entity_reference.c
+compiling xml_namespace.c
+compiling xml_node.c
+compiling xml_node_set.c
+compiling xml_processing_instruction.c
+compiling xml_reader.c
+compiling xml_relax_ng.c
+compiling xml_sax_parser.c
+compiling xml_sax_parser_context.c
+compiling xml_sax_push_parser.c
+compiling xml_schema.c
+compiling xml_syntax_error.c
+compiling xml_text.c
+compiling xml_xpath_context.c
+compiling xslt_stylesheet.c
+linking shared-object nokogiri/nokogiri.so
+Cleaning files only used during build.
+
+current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nokogiri-1.11.2/ext/nokogiri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nokogiri.so ./.gem.20210330-113683-8r3aez/nokogiri
+installing nokogiri libraries
