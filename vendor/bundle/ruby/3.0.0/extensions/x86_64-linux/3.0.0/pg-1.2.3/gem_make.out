@@ -1,5 +1,5 @@
 current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/pg-1.2.3/ext
-/home/widzmarc/.rbenv/versions/3.0.0/bin/ruby -I /home/widzmarc/.rbenv/versions/3.0.0/lib/ruby/site_ruby/3.0.0 -r ./siteconf20210316-159533-csfsxv.rb extconf.rb
+/home/widzmarc/.rbenv/versions/3.0.0/bin/ruby -I /home/widzmarc/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210330-125568-6qpoif.rb extconf.rb
 checking for pg_config... yes
 Using config values from /usr/bin/pg_config
 checking for libpq-fe.h... yes
@@ -21,10 +21,10 @@ creating extconf.h
 creating Makefile
 
 current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/pg-1.2.3/ext
-make DESTDIR\= clean
+make "DESTDIR=" clean
 
 current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/pg-1.2.3/ext
-make DESTDIR\=
+make "DESTDIR="
 compiling gvl_wrappers.c
 compiling pg.c
 compiling pg_binary_decoder.c
@@ -65,5 +65,5 @@ compiling pg_util.c
 linking shared-object pg_ext.so
 
 current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/pg-1.2.3/ext
-make DESTDIR\= install
-/usr/bin/install -c -m 0755 pg_ext.so ./.gem.20210316-159533-ml9iov
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 pg_ext.so ./.gem.20210330-125568-5zyp3o

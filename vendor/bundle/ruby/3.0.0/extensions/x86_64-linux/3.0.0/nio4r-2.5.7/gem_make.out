@@ -1,5 +1,5 @@
 current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nio4r-2.5.7/ext/nio4r
-/home/widzmarc/.rbenv/versions/3.0.0/bin/ruby -I /home/widzmarc/.rbenv/versions/3.0.0/lib/ruby/site_ruby/3.0.0 -r ./siteconf20210316-159533-uofmuq.rb extconf.rb
+/home/widzmarc/.rbenv/versions/3.0.0/bin/ruby -I /home/widzmarc/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210330-125568-capuot.rb extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... yes
 checking for linux/io_uring.h... yes
@@ -12,10 +12,10 @@ checking for sys/resource.h... yes
 creating Makefile
 
 current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nio4r-2.5.7/ext/nio4r
-make DESTDIR\= clean
+make "DESTDIR=" clean
 
 current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nio4r-2.5.7/ext/nio4r
-make DESTDIR\=
+make "DESTDIR="
 compiling bytebuffer.c
 compiling monitor.c
 compiling nio4r_ext.c
@@ -112,5 +112,5 @@ cc1: warning: unrecognized command line option â€˜-Wno-constant-logical-operandâ
 linking shared-object nio4r_ext.so
 
 current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/nio4r-2.5.7/ext/nio4r
-make DESTDIR\= install
-/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20210316-159533-qciyu2
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20210330-125568-dx8aw0

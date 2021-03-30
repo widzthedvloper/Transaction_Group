@@ -1,5 +1,5 @@
 current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/msgpack-1.4.2/ext/msgpack
-/home/widzmarc/.rbenv/versions/3.0.0/bin/ruby -I /home/widzmarc/.rbenv/versions/3.0.0/lib/ruby/site_ruby/3.0.0 -r ./siteconf20210316-159533-b328f1.rb extconf.rb
+/home/widzmarc/.rbenv/versions/3.0.0/bin/ruby -I /home/widzmarc/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210330-125568-g5dk06.rb extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... no
 checking for rb_str_replace() in ruby.h... yes
@@ -13,10 +13,10 @@ checking for rb_hash_clear() in ruby.h... yes
 creating Makefile
 
 current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/msgpack-1.4.2/ext/msgpack
-make DESTDIR\= clean
+make "DESTDIR=" clean
 
 current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/msgpack-1.4.2/ext/msgpack
-make DESTDIR\=
+make "DESTDIR="
 compiling buffer.c
 compiling buffer_class.c
 buffer_class.c: In function ‘read_until_eof’:
@@ -84,5 +84,5 @@ compiling unpacker_ext_registry.c
 linking shared-object msgpack/msgpack.so
 
 current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/msgpack-1.4.2/ext/msgpack
-make DESTDIR\= install
-/usr/bin/install -c -m 0755 msgpack.so ./.gem.20210316-159533-vgcuir/msgpack
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 msgpack.so ./.gem.20210330-125568-jm7zzf/msgpack

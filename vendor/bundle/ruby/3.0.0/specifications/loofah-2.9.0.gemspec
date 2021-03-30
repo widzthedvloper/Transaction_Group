@@ -14,10 +14,10 @@ Gem::Specification.new do |s|
   s.email = ["mike.dalessio@gmail.com".freeze, "bryan@brynary.com".freeze]
   s.homepage = "https://github.com/flavorjones/loofah".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "3.2.11".freeze
+  s.rubygems_version = "3.2.3".freeze
   s.summary = "Loofah is a general library for manipulating and transforming HTML/XML documents and fragments, built on top of Nokogiri".freeze
 
-  s.installed_by_version = "3.2.11" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.2.3" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4

@@ -1,12 +1,12 @@
 current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
-/home/widzmarc/.rbenv/versions/3.0.0/bin/ruby -I /home/widzmarc/.rbenv/versions/3.0.0/lib/ruby/site_ruby/3.0.0 -r ./siteconf20210316-159533-wtelc0.rb extconf.rb
+/home/widzmarc/.rbenv/versions/3.0.0/bin/ruby -I /home/widzmarc/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20210330-125568-cn29ii.rb extconf.rb
 creating Makefile
 
 current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
-make DESTDIR\= clean
+make "DESTDIR=" clean
 
 current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
-make DESTDIR\=
+make "DESTDIR="
 compiling ./libsass/src/ast.cpp
 compiling ./libsass/src/ast2c.cpp
 compiling ./libsass/src/ast_fwd_decl.cpp
@@ -76,5 +76,5 @@ compiling ./libsass/src/values.cpp
 linking shared-object sassc/libsass.so
 
 current directory: /home/widzmarc/Microverse/Transaction_Group/vendor/bundle/ruby/3.0.0/gems/sassc-2.4.0/ext
-make DESTDIR\= install
-/usr/bin/install -c -m 0755 libsass.so ./.gem.20210316-159533-sjg4q0/sassc
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 libsass.so ./.gem.20210330-125568-bg94ht/sassc
