@@ -2,7 +2,7 @@
 An app for grouping transactions by goals. A simple authentication form is used to create a user and log in. The app allows you to create a transaction, create a group and then add the transaction to multiple groups. Design idea by [Gregoire Vella on Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding)
 
 ## Live Version
-[Transaction Group](https://tranquil-springs-52360.herokuapp.com/)
+[Transaction Group](https://aqueous-anchorage-96562.herokuapp.com/)
 
 ## App Home Page
 ![](app/assets/images/profil.png)

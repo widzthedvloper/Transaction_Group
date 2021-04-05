@@ -1,5 +1,11 @@
 <div class='py-5 container-fluid d-flex justify-content-center'>
-  <h2 class="text-light">TRANSACTIONS</h2>
+  <h2 class="text-light">TRANSACTION</h2>
+</div>
+<div class="d-flex justify-content-between container">
+  <%= link_to "profil",main_path, class: "text-light" %>
+  <%= link_to "transaction",transaction_path, class: "text-light" %>
+  <%= link_to "external transaction",ext_transaction_path, class: "text-light" %>
+  <%= link_to "group",group_path, class: "text-light"%>
 </div>
 <div class="gray">
   <div class="d-flex bg-light justify-content-between">
@@ -20,6 +26,7 @@
       </div>
       <br>
       <%= link_to 'Add To A Group --->', add_transaction_path(id: transactions.id), class: "text-decoration-none" %>
+      <%= link_to 'Delete Transaction --->', delete_transaction_path(id: transactions.id),data: {confirm: "#{transactions.name} transaction will be deleted"}, class: 'text-decoration-none text-danger', method: 'delete'%>
     </div>
   <% end %>
 

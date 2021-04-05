@@ -1,15 +1,22 @@
 // Place all the styles related to the groups controller here.
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+// You can use Sass (SCSS) here: https://sass
 body {
   background-color: #3777c2;
 }
+
 .gray {
   background-color: #bac1c9;
   height: 100vh;
 }
 
-p, a {
+p,
+a,
+input,
+h1,
+h2,
+button,
+.text-color {
   color: #434b54;
 }
 
@@ -26,4 +33,12 @@ p, a {
   position: fixed;
   bottom: 0;
   background-color: #5fb523;
+}
+
+.g-transaction-cta {
+  background-color: #5fb523;
+}
+
+.full-height {
+  height: 100vh;
 }

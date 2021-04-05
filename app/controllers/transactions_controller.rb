@@ -39,6 +39,11 @@ class TransactionsController < ApplicationController
     end
   end
 
+  def destroy
+    Transaction.destroy(params[:id])
+    redirect_to transaction_path
+  end
+
   private
 
   def user_attributes
