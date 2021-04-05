@@ -12,8 +12,6 @@ An app for grouping transactions by goals. A simple authentication form is used 
 ![](app/assets/images/transaction.png)
 ## App group view
 ![](app/assets/images/group.png)
-## App add view group
-![](app/assets/images/addtogroup.png)
 
 ## Prerequisite
 - PostgreSQL
