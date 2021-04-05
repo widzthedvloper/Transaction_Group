@@ -117,7 +117,7 @@ This error occurs because you are trying to minify by terser a pack that's alrea
 // production.rb
 # From
 
-Rails.application.config.assets.js_compressor = :uglifier
+Rails.application.config.assets.js_compressor = Uglifier.new(harmony: true) 
 
 # To
 
