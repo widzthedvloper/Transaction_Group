@@ -1,23 +1,32 @@
-<div class='py-5 container-fluid bg-primary d-flex justify-content-center'>
-  <h2>Group</h2>
+<div class='py-5 container-fluid d-flex justify-content-center'>
+  <h2 class='text-light'>Group</h2>
 </div>
-<div class="d-flex bg-light justify-content-between">
-<spam class="px-2 py-3">Total Group</spam>
-<spam class="px-2 py-3"><%= @count %></spam>
+<div class="d-flex justify-content-between container">
+  <%= link_to "profil",main_path, class: "text-light" %>
+  <%= link_to "transaction",transaction_path, class: "text-light" %>
+  <%= link_to "external transaction",ext_transaction_path, class: "text-light" %>
+  <%= link_to "group",group_path, class: "text-light"%>
 </div>
-<% @groups.each do |group| %>
-  <%= link_to group_path(id: group.id), method: :post do %>
-  <div class="container border border-white my-2">
-    <div class="d-inline-block w-25 text-white">
-     <%= image_tag('transactions.png', :class => "h-100 w-100") %>
-    </div>
-    <div class="d-inline-block w-50 p-2 text-white">
-      <p><%= group.name %></p>
-      <p><%= group.created_at %></p>
-    </div>
+<div class="gray">
+  <div class="d-flex bg-light justify-content-between">
+    <span class="px-2 py-3">Total Group</span>
+    <span class="px-2 py-3"><%= @count %></span>
   </div>
+  <% @groups.each do |group| %>
+    <%= link_to group_path(id: group.id), method: :post do %>
+    <div class="container bg-white my-2 my-container">
+      <div class="d-inline-block w-25 text-white">
+        <%= image_tag('transactions.png', :class => "h-100 w-100 mb-2 yellow") %>
+      </div>
+      <div class="d-inline-block w-50 mt-3 text-white">
+        <p><%= group.name %></p>
+        <p><%= group.created_at %></p>
+      </div>
+    </div>
+    <% end %>
   <% end %>
-<% end %>
-<div class="bg-success py-4 d-flex justify-content-center">
-  <%= link_to 'Create Group', create_group_path, class: "text-white text-decoration-none border border-white py-3 px-5" %>
+  <div class="py-4 d-flex justify-content-center cta w-100">
+    <%= link_to "back", request.referer.present? ? request.referer : main_path, class: "text-white border rounded-circle p-2 pt-3 text-decoration-none me-5" %>
+    <%= link_to 'Create Group', create_group_path, class: "text-white text-decoration-none border border-white py-3 px-5" %>
+  </div>
 </div>

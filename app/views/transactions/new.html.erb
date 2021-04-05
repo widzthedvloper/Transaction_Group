@@ -1,18 +1,22 @@
-<div class="container text-center text-white">
+<div class="py-5 container-fluid d-flex justify-content-center">
   <h1>Create A Transaction</h1>
 </div>
-<%= form_with model: @transactions, url: transaction_path do |form| %>
-  <% if @transactions.errors.any? %>
-    <div class="alert alert-danger" role="alert">
-      <% @transactions.errors.full_messages.each do |message|%>
-        <div><%= message %></div>
-      <%end%>
-    </div>
+<div class="d-flex justify-content-between container">
+  <%= link_to "profil",main_path, class: "text-light" %>
+  <%= link_to "transaction",transaction_path, class: "text-light" %>
+  <%= link_to "external transaction",ext_transaction_path, class: "text-light" %>
+  <%= link_to "group",group_path, class: "text-light"%>
+</div>
+<div class="gray">
+  <%= form_with model: @transactions, url: transaction_path do |form| %>
+    <%= div_start%>
+    <%= display_errors %>
+    <%= div_end%>
+    <%= form.label :name, class: "text-color" %>
+    <%= form.text_field :name, class: "form-control" %>
+    <%= form.label :amount, class: "text-color" %>
+    <%= form.text_field :amount, class: "form-control" %>
+    <%= form.number_field :user_id, value: Current.user.id, type: :hidden %>
+    <%= form.submit class: "btn g-transaction-cta form-control mt-2"%>
   <% end %>
-  <%= form.label :name, class: "text-white" %>
-  <%= form.text_field :name, class: "form-control" %>
-  <%= form.label :amount, class: "text-white" %>
-  <%= form.text_field :amount, class: "form-control" %>
-  <%= form.number_field :user_id, value: Current.user.id, type: :hidden %>
-  <%= form.submit class: "btn btn-success form-control mt-2"%>
-<% end %>
+</div>
