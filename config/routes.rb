@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'transaction', to: 'transactions#index'
   get 'create_transaction', to: 'transactions#new'
   post 'transaction', to: 'transactions#create'
+  delete 'delete_transaction', to: 'transactions#destroy'
 
   get 'ext_transaction', to: 'transactions#external'
 
@@ -28,4 +29,4 @@ Rails.application.routes.draw do
 
   delete "log_out", to: "sessions#destroy"
   root to: "sessions#new"
-end
+endd
