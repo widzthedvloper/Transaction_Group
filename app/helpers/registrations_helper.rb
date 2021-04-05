@@ -12,4 +12,4 @@ module RegistrationsHelper
   def display_reg_errors
     @user.errors.full_messages.each { |message| p message } if @user.errors.any?
   end
-endd
+end
