@@ -13,7 +13,6 @@ Rails.application.routes.draw do
   get 'create_transaction', to: 'transactions#new'
   post 'transaction', to: 'transactions#create'
   delete 'delete_transaction', to: 'transactions#destroy'
-
   get 'ext_transaction', to: 'transactions#external'
 
 

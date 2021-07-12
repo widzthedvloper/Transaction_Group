@@ -12,6 +12,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+vendor
 
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
